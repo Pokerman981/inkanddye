@@ -4,7 +4,7 @@
   "description": "",
   "main": "public/index.html",
   "scripts": {
-    "build": "firebase deploy"
+    "build": "firebase deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
