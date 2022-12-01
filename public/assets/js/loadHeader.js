@@ -2,8 +2,7 @@ const header =   `<div class="container-fluid d-flex align-items-center justify-
 
     <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
       <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <i class="bi"></i>
+      <img src="assets/img/android-chrome-192x192.png" alt="">
       <h1>Ink and Dye</h1>
     </a>
 
