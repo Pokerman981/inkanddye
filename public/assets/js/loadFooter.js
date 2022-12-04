@@ -1,11 +1,7 @@
 const text = `
-<div class="container">
+<div class="container-sm">
     <div class="copyright">
-        &copy; <strong><span>PhotoFolio</span></strong>
-    </div>
-    <div class="credits">
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; <strong><span>BootstrapMade</span></strong>
     </div>
 </div>`
 

@@ -63,23 +63,48 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+  <!-- <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
-          <h2><span>Ink and Dye</span><br><br></h2>
-          <a href="contact.html" class="btn-get-started">View Store</a>
-        </div>
+          <h2><span>Ink and Dye</span><br><br></h2> -->
+          <!-- <a href="contact.html" class="btn-get-started">View Store</a> -->
+        <!-- </div>
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </section> -->
+  
+  <!-- End Hero Section -->
 
   <main id="main" data-aos="fade" data-aos-delay="1500">
 
+
+
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
+    
       <div class="container-fluid">
-        <div id="galleryStart" class="row gy-4 justify-content-center">
+        <div id="" class="row gy-4 justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets\img\52429885714_7451ab1802_k.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <!-- <a href="${url}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a> -->
+                  <a href="https://www.etsy.com/shop/InkandDyeArt" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              </div>
+            </div><!-- End Gallery Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets\img\52478493732_2e5a684ce0_o.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <!-- <a href="${url}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a> -->
+                  <a href="https://www.etsy.com/shop/InkandDyeArt" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              </div>
+            </div><!-- End Gallery Item -->
 
         </div>
       </div>
@@ -111,33 +136,33 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
 
-      const storage = firebase.app().storage();
-      const storageList = storage.ref().child("images/").listAll();
+      // const storage = firebase.app().storage();
+      // const storageList = storage.ref().child("images/").listAll();
 
-      const gallery = document.querySelector("#galleryStart");
+      // const gallery = document.querySelector("#galleryStart");
 
-      storageList.then((e) => {
-        for (let name of e.items) {
-          storage.ref().child(`images/${name.name}`).getDownloadURL().then((url) => {
+      // storageList.then((e) => {
+      //   for (let name of e.items) {
+      //     storage.ref().child(`images/${name.name}`).getDownloadURL().then((url) => {
 
-            // TODO Perform sanitization
+      //       // TODO Perform sanitization
 
-          let text = `          
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="${url}" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="${url}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="${name.name}.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->`
+      //     let text = `          
+      //     <div class="col-xl-3 col-lg-4 col-md-6">
+      //       <div class="gallery-item h-100">
+      //         <img src="${url}" class="img-fluid" alt="">
+      //         <div class="gallery-links d-flex align-items-center justify-content-center">
+      //           <a href="${url}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+      //           <a href="${name.name}.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+      //         </div>
+      //       </div>
+      //     </div><!-- End Gallery Item -->`
 
-          gallery.innerHTML = gallery.innerHTML + text;
+      //     gallery.innerHTML = gallery.innerHTML + text;
 
-        });
-        }
-      });
+      //   });
+      //   }
+      // });
 
       // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
       // // The Firebase SDK is initialized and available here!
@@ -176,7 +201,7 @@
   </script>
 
 <script defer src="assets/js/loadHeader.js"></script>
-<script defer src="assets/js/loadFooter.js"></script> 
+<!-- <script defer src="assets/js/loadFooter.js"></script>  -->
 
 </body>
 
